@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Hobby</title>
+    <style>
+      body {
+        background: rgb(221, 206, 246);
+      }
+
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+      }
+      a {
+        display: block;
+        text-align: left;
+        font-size: 20px;
+        font-weight: bolder;
+        font-family: "Courier New", Courier, monospace;
+        font-style: italic;
+        text-decoration: none;
+        color: rgb(119, 41, 215);
+      }
+      footer {
+        font-size: 18px;
+        font-family: cursive;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.3;
+        margin: 35px auto;
+      }
+      .dark {
+        background: black;
+      }
+      .dark a {
+        color: black;
+      }
+
+      .dark .project {
+        background: rgb(134, 134, 134);
+      }
+
+      .project {
+        text-align: center;
+        background: rgb(167, 130, 227);
+        max-width: 40%;
+        border-radius: 10px;
+        margin: 90px auto;
+        padding: 10px 5px;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        gap: 10px;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .main-img {
+        text-align: center;
+        width: 350px;
+        height: 250px;
+      }
+      .main-img:hover {
+        transform: scale(1.5);
+        transition: all 200ms ease ease-in-out;
+      }
+      .theme {
+        display: block;
+        margin: 25px auto;
+        border-radius: 20px;
+        background: rgb(60, 21, 127);
+        border: 1px solid rgb(48, 7, 118);
+        color: rgb(253, 238, 220);
+        padding: 15px;
+        font-size: 15px;
+      }
+      .meditation {
+        margin: 35px auto;
+        border-radius: 45px;
+        background: rgb(60, 21, 127);
+        border: 1px solid rgb(48, 7, 118);
+        padding: 35px 55px;
+        font-size: 20px;
+        color: rgb(232, 227, 227);
+        font-weight: bold;
+      }
+      .dark .meditation {
+        background: rgb(78, 76, 76);
+        border: 1px solid rgb(78, 76, 76);
+      }
+      .dark .theme {
+        background: rgb(78, 76, 76);
+        border: 1px solid rgb(78, 76, 76);
+      }
+      .meditation:hover {
+        cursor: pointer;
+      }
+      .theme:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body class="light">
+    <button class="theme">Change theme</button>
+    <div class="project">
+      <h1>Meditation</h1>
+      <h2>Focus and clear your mind</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/399/original/meditation.jpg?1720970592"
+        alt=""
+        class="main-img"
+      />
+      <div class="gallery">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/396/original/budda.jpg?1720970572"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/400/original/mindfulness.jpg?1720970601"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/401/original/view.jpg?1720970607"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/398/original/breathe.jpg?1720970585"
+          alt=""
+        />
+      </div>
+      <p>
+        Meditation is a practice in which an individual uses a technique to
+        train attention and awareness and detach from reflexive, "discursive
+        thinking", achieving a mentally clear and emotionally calm and stable
+        state, while not judging the meditation process itself. Techniques are
+        broadly classified into focused (or concentrative) and open monitoring
+        methods. Focused methods involve attention to specific objects like
+        breath or mantras, while open monitoring includes mindfulness and
+        awareness of mental events.
+      </p>
+
+      <a href="https://en.wikipedia.org/wiki/Meditation" target="_blank"
+        >📖Read on wikipedia</a
+      >
+
+      <button class="meditation">Get free guided meditation</button>
+      <footer>Coded by Joanna</footer>
+      <script>
+        function getMeditation() {
+          let info = prompt(
+            "Hello! Please give us your email and we will send you free quided meditations :)"
+          );
+          alert("Thanks! Your meditations are on the way to you!");
+        }
+
+        function changeTheme() {
+          if (background === "light") {
+            background = "dark";
+            document.querySelector("body").classList.add("dark");
+          } else {
+            background = "light";
+            document.querySelector("body").classList.remove("dark");
+          }
+        }
+
+        let button = document.querySelector(".meditation");
+        button.addEventListener("click", getMeditation);
+
+        let background = "light";
+        let theme = document.querySelector(".theme");
+        theme.addEventListener("click", changeTheme);
+      </script>
+    </div>
+  </body>
+</html>

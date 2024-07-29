@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Growth</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(246, 187, 187) 0%,
+          rgb(249, 219, 217) 90%
+        );
+        margin: 0 auto;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        border: 2px solid rgb(255, 139, 139);
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgb(255, 197, 197);
+        padding: 5px 0;
+        background: rgb(255, 139, 139);
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 30%;
+      }
+
+      p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0 0;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        font-size: medium;
+        font-weight: bolder;
+        border: 1px solid rgb(255, 139, 139);
+        box-shadow: 2px 2px 2px rgb(255, 197, 197);
+        border-radius: 25px;
+        background-color: rgb(255, 139, 139);
+        padding: 15px 20px;
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        background-color: #fff3f5;
+        cursor: pointer;
+      }
+
+      footer {
+        text-align: center;
+        font-weight: 700;
+        color: rgb(126, 123, 123);
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .heart {
+        color: rgb(245, 9, 9);
+      }
+
+      .question {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .check {
+        text-decoration: none;
+        color: black;
+      }
+
+      .check:hover {
+        text-decoration: underline;
+        color: rgb(255, 139, 139);
+      }
+
+      .project {
+        background-image: linear-gradient(
+          109.6deg,
+          rgb(255, 221, 225) 11.2%,
+          rgb(255, 255, 255) 92.2%
+        );
+        border: 1px solid 109.6deg, rgb(255, 221, 225) 11.2%,
+          rgb(255, 255, 255) 92.2%;
+        max-width: 65%;
+        border-radius: 10px;
+        margin: 0 auto;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="project">
+      <h1>Personal Development</h1>
+      <h2>
+        💓<em
+          >Improve your life & follow your <span class="heart">heart!</span></em
+        >
+        💓
+      </h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/882/original/image.project.jpg?1638203322"
+        alt="men inside a flower"
+      />
+
+      <p>
+        <strong>Personal development is a lifelong process</strong> It includes
+        activities that improve awareness and identity, develop talents and
+        potential, build human capital and facilitate employability, enhance
+        quality of life and contribute to the realization of dreams and
+        aspirations.
+      </p>
+
+      <hr />
+      <div class="question">Interested?</div>
+
+      <ul>
+        <li>
+          <strong>
+            <a
+              href="https://www.amazon.com/s?k=personal+development+books&__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1A4IMWOP2ZGPO&sprefix=personal+develooment+boo%2Caps%2C255&ref=nb_sb_ss_sc_10_24"
+              target="_blank"
+              class="check"
+            >
+              Check books on Amazon
+            </a>
+          </strong>
+        </li>
+        <br />
+        <li>
+          <strong>
+            <a
+              href="https://www.youtube.com/results?search_query=personal+development"
+              target="_blank"
+              class="check"
+            >
+              Check videos on youtube
+            </a>
+          </strong>
+        </li>
+      </ul>
+      <br />
+      <br />
+
+      <button>Learn More 📖</button>
+      <br />
+      <br />
+
+      <footer><em>This page was coded by Joanna Banas</em></footer>
+
+      <script>
+        function getMoreInfo() {
+          let name = prompt("Hello! What is your name?");
+          let contact = prompt(
+            "How we should contact you? Via Email or Phone?"
+          );
+          contact = contact.toLowerCase();
+
+          if (contact === "email") {
+            let email = prompt("Insert your Email, please");
+            alert(
+              "Thank you " +
+                name +
+                "! We will send you more information about this topic 😊"
+            );
+          } else {
+            let phone = prompt("Insert your Phone number, please");
+            alert(
+              "Thank you " +
+                name +
+                "! We will call you with more information about this topic 😊"
+            );
+          }
+        }
+        let conntactButton = document.querySelector("button");
+        conntactButton.addEventListener("click", getMoreInfo);
+      </script>
+    </div>
+  </body>
+</html>

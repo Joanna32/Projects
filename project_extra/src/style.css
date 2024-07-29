@@ -1,0 +1,76 @@
+body {
+  background-color: rgb(234, 234, 237);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+h2 {
+  text-align: center;
+  color: rgb(5, 88, 160);
+}
+ol > li::marker {
+  font-weight: bold;
+}
+li {
+  padding: 8px 0;
+}
+img {
+  position: relative;
+  top: 150px;
+  right: 100px;
+}
+
+p {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 14px;
+
+  margin: 25px auto 25px;
+}
+a {
+  color: rgb(4, 4, 138);
+  text-decoration: none;
+  font-size: larger;
+}
+button {
+  display: block;
+  margin: 25px auto 10px;
+  padding: 15px 20px;
+  border: 1px solid rgb(49, 49, 240);
+  background-color: rgb(49, 49, 240);
+  color: white;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px rgb(166, 166, 204);
+
+  transition: all 150ms ease-in-out;
+}
+button:hover {
+  cursor: pointer;
+  color: rgb(49, 49, 240);
+  background-color: transparent;
+}
+
+.intro {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 68px;
+  font-family: "Courier New", Courier, monospace;
+}
+.language {
+  font-weight: bold;
+}
+
+.job {
+  color: red;
+  font-size: smaller;
+  font-weight: bolder;
+}
+.numbers {
+  color: black;
+  font-size: 15px;
+}
+.web-site {
+  text-align: center;
+}

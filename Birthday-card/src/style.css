@@ -1,0 +1,44 @@
+p,
+.footer {
+  text-align: center;
+  font-family: "Cookie", cursive;
+  font-size: 30px;
+  line-height: 1.5;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+button {
+  display: block;
+  margin: 50px auto 20px;
+  padding: 15px 20px;
+  background: rgb(50, 47, 192);
+  color: rgb(230, 230, 230);
+  font-size: 15px;
+  border: 1px solid rgb(50, 47, 192);
+  border-radius: 20px;
+  box-shadow: 2px 2px 3px rgb(56, 53, 243);
+  transition: all 150ms ease-in-out;
+}
+button:hover {
+  cursor: pointer;
+  background: rgb(55, 51, 245);
+}
+
+.card-project {
+  background-image: url("./image/background.jpg");
+  background-size: 100%;
+  margin: 20px auto;
+  padding: 60px 40px 25px;
+  max-width: 55%;
+  border-color: rgb(20, 17, 219);
+  border-style: double;
+  border-radius: 10px;
+}
+.heading {
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  color: rgb(20, 17, 219);
+  font-family: "Courier New", Courier, monospace;
+}
